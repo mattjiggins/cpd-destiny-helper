@@ -1,0 +1,1 @@
+{"version":3,"sources":["../clipboard.js"],"names":["destinyKeywordsClipboard","Clipboard","on","e","console","info","action","text","trigger","clearSelection"],"mappings":"AAAA,GAAIA,0BAA2B,GAAIC,WAAU,oBAE7CD,0BAAyBE,GAAG,UAAW,SAASC,GAC5CC,QAAQC,KAAK,UAAWF,EAAEG,QAC1BF,QAAQC,KAAK,QAASF,EAAEI,MACxBH,QAAQC,KAAK,WAAYF,EAAEK,SAE3BL,EAAEM","file":"clipboard-min.js"}

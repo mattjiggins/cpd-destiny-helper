@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Destiny 1 Helper Tools</title>
+
+<link href="https://fonts.googleapis.com/css?family=Lato|Source+Code+Pro" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles/css/main.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style media="screen">
+        .tt-menu {
+            background:white;
+        }
+    </style>
+  </head>
+  <body>
+        <div class="container">
+        <h1>Destiny One Helper Tools</h1>
+
+        <h2>Keywords Generator</h2>
+
+        <div id="app-cpd-d1-keywords-helper">
+            <div class="pure-form pure-form-stacked keywords-generator">
+                <div class="search">
+                    <label for="">Select Keywords</label>
+                    <v-select id="select-keywords" :on-change="keywordChange" v-model="keywordSelect" :options="keywordOptions" :searchable="true" :value="null"></v-select>
+
+                    <label for="select-evms-event">Select EvMS Event</label>
+                    <v-select id="select-evms-event" :on-change="eventChange" v-model="eventSelect" :options="eventsOptions" :searchable="true" :value="null"></v-select>
+                </div>
+
+                <div class="composer">
+                    <button v-on:click="clearComposer" id="clearComposer" class="btn btn-sm btn-red pull-right" style="margin-top:10px;">Clear</button>
+                    <label for="cpd-keywords-selected">Keywords Selected</label>
+                    <textarea id="cpd-keywords-selected" v-model="keywordComposer"  class="form-control" name="cpd-keywords" rows="10"></textarea>
+                </div>
+
+                <div class="results">
+                    <button id="copy-destiny-keywords" class="btn btn-sm btn-green pull-right btn-copy-destiny" data-clipboard-target="#cpd-keywords-for-d1">Copy</button>
+                    <label for="cpd-keywords-for-d1">Results for Destiny One</label>
+                    <textarea id="cpd-keywords-for-d1" v-model="destinyResult" class="form-control" name="name" rows="8"></textarea>
+                </div>
+            </div>
+        </div><!-- #app-cpd-d1-keywords-helper -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://unpkg.com/vue-select@latest"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+
+        <script src="scripts/min/main-vue-min.js"></script>
+        <script src="scripts/min/clipboard-min.js"></script>
+
+  </body>
+</html>

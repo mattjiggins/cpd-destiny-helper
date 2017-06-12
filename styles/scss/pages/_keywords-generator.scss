@@ -1,0 +1,29 @@
+.keywords-generator {
+
+    @include respond-to('sm') {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+.search {
+    padding: 1em;
+    @include respond-to('sm') {
+        flex: 50%;
+    }
+}
+
+.composer {
+    padding: 1em;
+    @include respond-to('sm') {
+        flex: 50%;
+    }
+}
+
+.results {
+    padding: 1em;
+    @include respond-to('sm') {
+        flex: 100%;
+    }
+}

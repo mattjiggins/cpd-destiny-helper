@@ -1,0 +1,1 @@
+var destinyKeywordsClipboard=new Clipboard(".btn-copy-destiny");destinyKeywordsClipboard.on("success",function(e){var n=document.getElementById("copy-destiny-keywords");n.innerHTML="&check; Copied",setTimeout(function(){n.innerHTML="Copy"},7500)});

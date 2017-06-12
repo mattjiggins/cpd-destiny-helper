@@ -1,0 +1,17 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 18px $text-font-stack;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+    //font-weight: 700;
+}
+
+.dropdown-menu {
+    font-size: .8em;
+    display: block;
+}
