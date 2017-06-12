@@ -46,8 +46,16 @@ var app = new Vue({
         clearComposer: function () {
             this.keywordComposer = "";
         },
-        copyDestinyResult: function() {
-            var resultForDestiny = this.destinyResult;
+        showKeywordVideo: function() {
+            var keywordHelper = document.getElementById("keywords-helper-video");
+            var buttonShowKeywordHelper = document.getElementById("keywords-helper-info");
+            if (buttonShowKeywordHelper.innerHTML == "Close") {
+                buttonShowKeywordHelper.innerHTML = "Help/Information";
+                keywordHelper.className = " visually-hidden";
+            } else {
+                buttonShowKeywordHelper.innerHTML = "Close";
+                keywordHelper.className = "";
+            }
         },
         keywordChange: function(val) {
             if ((val != "") && (val != null)) {
