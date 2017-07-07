@@ -1,5 +1,5 @@
-var eventsURI = 'http://eventsapi.cpdtoronto.ca/api/2/events/';
-var keywordsURI =  'http://www.cpd.utoronto.ca/wp-json/cpdprograms/v1/keywords';
+var eventsURI = 'https://eventsapi.cpdtoronto.ca/api/2/events';
+var keywordsURI =  'https://www.cpd.utoronto.ca/wp-json/cpdprograms/v1/keywords';
 
 Vue.component('v-select', VueSelect.VueSelect);
 
